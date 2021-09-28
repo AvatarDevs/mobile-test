@@ -7,6 +7,7 @@ import 'package:superformula_test/modules/qr_code/qr_code.dart';
 class Routes {
   static const Home = '/home';
   static const QrCode = '/qrcode';
+  static const Scan = '/scan';
 
   static const Unknown = '/unknown';
 

@@ -17,7 +17,7 @@ class QrCodeController extends GetxController
     change(data, status: getStatus(data));
   }
 
-  /// If the items is empty, return empty status so the view renders onEmtpy() widget
+  /// If the items are empty, return empty status so the view renders onEmtpy() widget
   RxStatus getStatus(QrModel? item) {
     var status = RxStatus.success();
     if (item == null) {

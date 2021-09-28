@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:superformula_test/core/app/routes/routes.dart';
+import 'package:superformula_test/modules/home/components/flow_action_button/flow_button.dart';
 import 'package:superformula_test/modules/qr_code/qr_code.dart';
 
 class HomeMobile extends StatelessWidget {
@@ -12,12 +13,7 @@ class HomeMobile extends StatelessWidget {
       appBar: AppBar(
         title: Text('Home'),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Get.toNamed(Routes.QrCode);
-        },
-        child: Icon(Icons.add),
-      ),
+      floatingActionButton: FlowButton(),
     );
   }
 }
