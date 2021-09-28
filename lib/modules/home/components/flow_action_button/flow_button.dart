@@ -33,7 +33,7 @@ class _FlowButtonState extends State<FlowButton>
     return Align(
       alignment: Alignment.bottomRight,
       child: Container(
-        color: Colors.red,
+        // color: Colors.red,
         child: Flow(
           delegate: FlowButtonDelegate(myAnimation: controller),
           children:
@@ -57,7 +57,6 @@ class _FlowButtonState extends State<FlowButton>
         shape: CircleBorder(),
         constraints: BoxConstraints.tight(Size.square(50.0)),
         onPressed: () {
-          animate();
           mapIconToRoute(icon);
         },
         child: Icon(
@@ -74,6 +73,8 @@ class _FlowButtonState extends State<FlowButton>
       Get.toNamed(Routes.Scan);
     } else if (icon == Icons.qr_code) {
       Get.toNamed(Routes.QrCode);
+    } else {
+      animate();
     }
   }
 }

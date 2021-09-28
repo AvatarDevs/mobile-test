@@ -3,6 +3,8 @@ import 'package:superformula_test/modules/404/unknown_route.dart';
 import 'package:superformula_test/modules/home/home_view.dart';
 import 'package:superformula_test/modules/qr_code/bindings/qr_binding.dart';
 import 'package:superformula_test/modules/qr_code/qr_code.dart';
+import 'package:superformula_test/modules/scan/bindings/scan_binding.dart';
+import 'package:superformula_test/modules/scan/scan_view.dart';
 
 class Routes {
   static const Home = '/home';
@@ -20,6 +22,11 @@ class Routes {
       name: QrCode,
       page: () => QrCodeView(),
       binding: QrCodeBinding(),
+    ),
+ GetPage(
+      name: Scan,
+      page: () => ScanView(),
+      binding: ScanBinding(),
     ),
 
     /// This is how we can create a dynamic route that looks for Get.arguments, and reflects this in the URL on web

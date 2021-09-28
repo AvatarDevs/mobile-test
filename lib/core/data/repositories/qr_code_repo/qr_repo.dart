@@ -19,6 +19,7 @@ class QrRepository with HttpServiceMixin implements QrRepositoryInterface {
   @override
   Future<bool> validateQrCode(String code) async {
     //should hypothetically send to server to validate
+    print("CODE" + code);
     return true;
   }
 }

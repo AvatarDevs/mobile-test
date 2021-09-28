@@ -25,4 +25,9 @@ class QrCodeController extends GetxController
     }
     return status;
   }
+
+  onTimerEnd() async {
+    final model = await qrRepository.getSeed();
+    rebuildOnChange(model);
+  }
 }
